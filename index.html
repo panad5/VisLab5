@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coffee House Chains</title>
+
+
+     <!-- Milligram CSS -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+ 
+     <!-- Your CSS rules-->
+     <link rel="stylesheet" href="style.css" />
+    
+    <script defer src = "https://d3js.org/d3.v6.min.js"></script>
+    <script defer src = "d3.js"></script>
+    
+  </head>
+  <body>
+      <!-- Parent container of our chart-->
+      <div class="container">
+        <h2>
+            Coffee House Chains
+        </h2>
+        <h3>A ranking of selected leading coffee house chains worldwide</h3>
+        <div class="coffeehouse-plot"></div>
+        <label for="group-by" align="left">Group By</label>
+<select id="group-by">
+  <option value="stores">Stores worldwide</option>
+  <option value="revenue">Revenue in billion U.S. dollars</option>
+</select>
+
+<label for="sort" align="left">Order By</label>
+<select id="sort">
+  <option value="ascending">Ascending</option>
+  <option value="descending">Descending</option>
+</select>
+
+      </div>
+  </body>
+</html>
